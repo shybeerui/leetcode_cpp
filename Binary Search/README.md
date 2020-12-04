@@ -1,14 +1,17 @@
 # Binary Search
 ## stl库
 ### lower_bound  
-若序列中存在value，则输出该value的最小下标；若不存在，则输出第一个大于该value的值的下标或者序列的0/size-1。  
-可自定义比较函数。  
+输出最早能插入的位置。    
 template< class ForwardIt, class T, class Compare >  
 ForwardIt lower_bound( ForwardIt first, ForwardIt last, const T& value, Compare comp );  
 ### upper_bound  
-若序列中存在value，则输出该value的最大下标；若不存在，则输出第一个大于该value的值的下标或者序列的0/size-1。  
+输出最晚能插入的位置。  
 template< class ForwardIt, class T, class Compare >  
 ForwardIt upper_bound( ForwardIt first, ForwardIt last, const T& value, Compare comp );  
+### 比较函数cmp  
+auto cmp = [](int a, int b) { return a < b; };  //默认是小于的  
+auto cmp = [](int a, int b) { return a <= b; }; //lower_bound<->upper_bound  
+  
 ## 由leetcode34. Find First and Last Position of Element in Sorted Array引发的思考
 ### Find First Position  
     int findLeft(vector<int>& nums, int target){  

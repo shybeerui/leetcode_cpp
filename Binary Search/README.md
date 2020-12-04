@@ -18,7 +18,7 @@ ForwardIt upper_bound( ForwardIt first, ForwardIt last, const T& value, Compare 
         while (l < r) {  
             mid = l+(r-l)/2;        //保证最终mid=l  
             if (nums[mid] < target)  
-                l = mid+1;          //若存在：保证l为左起第一个满足nums[l]==target的位置 
+                l = mid+1;          //若存在：保证l为左起第一个满足nums[l]==target的位置   若不存在：保证l为左起第一个满足nums[l]>target的位置  
             else  
                 r = mid;            //若存在：保证nums[r]=target
         }  
@@ -36,7 +36,7 @@ ForwardIt upper_bound( ForwardIt first, ForwardIt last, const T& value, Compare 
         while (r > l) {  
             mid = r-(r-l)/2;        //保证最终mid=r  
             if (nums[mid] > target)  
-                r = mid-1;          //若存在：保证r为右起第一个满足nums[l]==target的位置   
+                r = mid-1;          //若存在：保证r为右起第一个满足nums[r]==target的位置   若不存在：保证r为右起第一个满足nums[r]<target的位置     
             else  
                 l = mid;            //若存在：保证nums[l]=target  
         }  

@@ -1,9 +1,9 @@
-# 二.线性表 Array
-## Remove Duplicates from Sorted Array
+## 二. 线性表 Array
+### Remove Duplicates from Sorted Array
 双指针 一个指针指向新的尾元素，另一个一直往后移动 
 每次比较两个指针指向的元素，不同则移动前一个指针
 注意返回的是index+1和判空
-## Remove Duplicates from Sorted Array II
+### Remove Duplicates from Sorted Array II
 双指针 一个指针指向新的尾元素，另一个一直往后移动 
 每次比较第一个指针前指向的前一个内容和后一个指针指向的元素，不同则移动前一个指针  
   

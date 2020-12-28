@@ -10,6 +10,8 @@
 ## 五. 树
 ### 5.1 二叉树的遍历
 #### Binary Tree Preorder Traversal
+递归   
+非递归栈（本身 右 左）/（Morris）  
 
 
   

@@ -11,10 +11,30 @@
 ### 5.1 二叉树的遍历
 #### Binary Tree Preorder Traversal
 递归   
-非递归栈（本身 右 左）/（Morris）  
+非递归栈（本身 右 左）/（Morris 前驱结点右孩子为空的时候加入ret）  
+#### Binary Tree Inorder Traversal
+递归   
+非递归栈? /（Morris 前驱结点右孩子不为空的时候加入ret）  
+#### Binary Tree Postorder Traversal
+递归   
+非递归栈? /（Morris较为复杂 reverse路径）
+#### Binary Tree Level Order Traversal
+queue非递归 / 递归?  
+#### Binary Tree Level Order Traversal II
+上一题reverse  
+#### Binary Tree Zigzag Level Order Traversal
+用一个bool每层翻转即可  
+#### Recover Binary Search Tree
+最左和最右 Morris最优解  
+#### Same Tree
+递归 非递归（一个队列 包括空指针）  
+#### Symmetric Tree
+转化为same tree判断  
+#### Balanced Binary Tree
 
 
-  
+
+
 ## 六. 排序
 ### Merge Sorted Array
 从大到小  

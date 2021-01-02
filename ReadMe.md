@@ -31,9 +31,11 @@ queue非递归 / 递归?
 #### Symmetric Tree
 转化为same tree判断  
 #### Balanced Binary Tree
-
-
-
+递归 树的高度在这个过程中算出来 注意剪枝  
+#### Flatten Binary Tree to Linked List
+迭代版（栈 右左） 递归版（链表头尾）  
+#### Populating Next Right Pointers in Each Node II
+迭代版 常数空间 不能用正常的层次遍历 但是可以利用next的性质  
 
 ## 六. 排序
 ### Merge Sorted Array

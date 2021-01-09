@@ -36,6 +36,35 @@ queue非递归 / 递归?
 迭代版（栈 右左） 递归版（链表头尾）  
 #### Populating Next Right Pointers in Each Node II
 迭代版 常数空间 不能用正常的层次遍历 但是可以利用next的性质  
+### 5.2 二叉树的构建
+#### Construct Binary Tree from Preorder and Inorder Traversal
+根据前序遍历对中序遍历进行分割  
+#### Construct Binary Tree from Inorder and Postorder Traversal
+与上题类似 根据后序遍历反向即可  
+### 5.3 二叉查找树
+#### Unique Binary Search Trees
+找递推式  
+#### Unique Binary Search Trees II
+左右分别 再join一下  
+#### Validate Binary Search Tree
+递归 子树的范围 / 也可以用中序遍历的思路  
+#### Convert Sorted Array to Binary Search Tree
+对半  
+#### Convert Sorted List to Binary Search Tree
+对半 快慢指针  
+### 5.4 二叉树的递归
+#### Minimum Depth of Binary Tree
+bfs / 递归  
+#### Maximum Depth of Binary Tree
+bfs /递归  
+#### Path Sum
+递归 注意对于叶子节点的判断  
+#### Path Sum II
+同上 记录路径即可  
+#### Binary Tree Maximum Path Sum
+很巧妙的递归设计 不断更新全局变量 left root right  
+#### Populating Next Right Pointers in Each Node
+
 
 ## 六. 排序
 ### Merge Sorted Array
